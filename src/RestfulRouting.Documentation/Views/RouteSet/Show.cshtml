@@ -14,7 +14,7 @@
 
 <section id="basics">
 <h2>The Basics</h2>
-<p><strong>A RoutSet is a collection of route mappings. It nor only define routes in your application, but can connect to other RouteSets.</strong></p>
+<p><strong>A RouteSet is a collection of route mappings. It not only define routes in your application, but can connect to other RouteSets.</strong></p>
 <p>All routes are defined inside the Map method of a RouteSet.</p>
 <pre class="prettyprint linenums">
 public class Routes : RouteSet
@@ -39,10 +39,10 @@ public static void Start()
 <p>
     <strong>Note: This code just needs to be called at application start. We prefer WebActivator, but you can call it in Global.asax if you would like. MapRoutes is an extension method from RestfulRouting.</strong>
 </p>
-</section> 
+</section>
 <section id="connect">
 <h2>Connecting RouteSets</h2>
-<p>Sometimes you want to logically seperate your RouteSets. Instead of grouping all routes in a single RouteSet, we provide the ability to connect RouteSets. You must select one RoutSet to be the root of your RouteSets, after which you may connect other RouteSets any way you would like. RouteSets also support namespaces, similar to areas.</p>
+<p>Sometimes you want to logically seperate your RouteSets. Instead of grouping all routes in a single RouteSet, we provide the ability to connect RouteSets. You must select one RouteSet to be the root of your RouteSets, after which you may connect other RouteSets any way you would like. RouteSets also support namespaces, similar to areas.</p>
 
 <pre class="prettyprint linenums">
 public class Routes : RouteSet
